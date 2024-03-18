@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'FUICallKit'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of FUICallKit.'
+  s.summary          = '音视频通话UI组件'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -21,22 +21,18 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/SailorGa/FUICallKit'
+  s.homepage         = 'https://github.com/seastart/callkitui-ios-cocoapods'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'SailorGa' => 'ljia789@gmail.com' }
-  s.source           = { :git => 'https://github.com/SailorGa/FUICallKit.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/seastart/callkitui-ios-cocoapods.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
-
-  s.ios.deployment_target = '10.0'
-
-  s.source_files = 'FUICallKit/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'FUICallKit' => ['FUICallKit/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  # 指定支持平台
+  s.ios.deployment_target = '10.0'
+  
+  # 依赖本地库文件
+  s.vendored_frameworks = 'FUICallKit/Depend/*.framework'
+  # 依赖本地资源文件
+  s.resource = 'FUICallKit/Resources/*.bundle'
 end

@@ -1,0 +1,6 @@
+framework module FUICallKit {
+  umbrella header "FUICallKit.h"
+  export *
+
+  module * { export * }
+}
