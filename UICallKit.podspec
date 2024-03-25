@@ -21,11 +21,11 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/seastart/callkitui-ios-cocoapods'
+  s.homepage         = 'https://github.com/seastart/uicallkit-ios-cocoapods'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'SailorGa' => 'ljia789@gmail.com' }
-  s.source           = { :git => 'https://github.com/seastart/callkitui-ios-cocoapods.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/seastart/uicallkit-ios-cocoapods.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
   
   # 指定支持平台
