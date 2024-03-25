@@ -1,5 +1,5 @@
 #
-# Be sure to run `pod lib lint FUICallKit.podspec' to ensure this is a
+# Be sure to run `pod lib lint UICallKit.podspec' to ensure this is a
 # valid spec before submitting.
 #
 # Any lines starting with a # are optional, but their use is encouraged
@@ -7,7 +7,7 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = 'FUICallKit'
+  s.name             = 'UICallKit'
   s.version          = '0.1.0'
   s.summary          = '音视频通话UI组件'
 
@@ -32,7 +32,9 @@ TODO: Add long description of the pod here.
   s.ios.deployment_target = '10.0'
   
   # 依赖本地库文件
-  s.vendored_frameworks = 'FUICallKit/Depend/*.framework'
+  s.vendored_frameworks = 'UICallKit/Depend/*.framework'
   # 依赖本地资源文件
-  s.resource = 'FUICallKit/Resources/*.bundle'
+  s.resource = 'UICallKit/Resources/*.bundle'
+  # 依赖远程音视频通话组件库
+  s.dependency 'CallKit'
 end

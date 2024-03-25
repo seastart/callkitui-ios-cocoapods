@@ -1,0 +1,6 @@
+framework module UICallKit {
+  umbrella header "UICallKit.h"
+  export *
+
+  module * { export * }
+}
